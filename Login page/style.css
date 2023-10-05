@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg.avif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.formbox{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0,0,.5);
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+.formbox h1{
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: white;
+    position: relative;
+}
+
+.formbox h1::after{
+    content:'';
+    width:30px ;
+    height: 4px;
+    border-radius: 3px;
+    background: purple;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inputfield{
+    background: #e0caca;
+    margin: 15px 0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+    font-size: 16px;
+}
+
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a{
+    text-decoration: none;
+    color: #3c00a0;
+}
+
+.btnfield{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnfield button{
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #e0caca;
+    height: 45px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    font-size: 15px;
+}
+
+.inputgroup{
+    height: 280px;
+}
+
+.btnfield button.disable{
+    background: #e0caca;
+    color: #555;
+}
